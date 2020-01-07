@@ -39,7 +39,7 @@ public class TestBanco {
 		transferencia50(cuentaBeatriz, cuentaAntonio);
 	}
 
-	/**
+	/** Consulta el saldo de la cuenta de Antonio
 	 * @param cuentaAntonio
 	 */
 	private static void consultarSaldo(Cuenta cuentaAntonio) {
@@ -47,7 +47,7 @@ public class TestBanco {
 				+ cuentaAntonio.getSaldo() + " euros.");
 	}
 
-	/**
+	/** Realiza transferencias entre Antonio y beatriz
 	 * @param cuentaAntonio
 	 * @param cuentaBeatriz
 	 */
@@ -56,14 +56,14 @@ public class TestBanco {
 		cuentaAntonio.setSaldo(cuentaAntonio.getSaldo() + 50);
 	}
 
-	/**
+	/**Devuelve los datos del cliente Beatriz
 	 * @return
 	 */
 	private static Cliente datosClienteBeatriz() {
 		return new Cliente ("987654321A", "Beatriz Benítez", "Calle Sol, 4");
 	}
 
-	/**
+	/***Devuelve los datos del cliente Antonio
 	 * @return
 	 */
 	private static Cliente datosClienteAntonio() {
